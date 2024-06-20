@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #3b2768; /* Dark purple */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5a4b81; /* Lighter purple */
+  border-radius: 6px;
+  border: 3px solid #3b2768; /* Matches track color for padding effect */
+}
